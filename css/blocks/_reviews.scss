@@ -1,0 +1,14 @@
+.reviews {
+
+    &__yandex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        color: var(--color-dark);
+    }
+    
+
+}

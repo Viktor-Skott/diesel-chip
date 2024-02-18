@@ -1,0 +1,15 @@
+.case {
+    &__inner {
+        background-color: var(--color-dark-alt);
+    }
+
+
+    &__title {
+        color: var(--color-light);
+    }
+
+    &__post {
+        display: flex;
+        flex-direction: column;
+    }
+}

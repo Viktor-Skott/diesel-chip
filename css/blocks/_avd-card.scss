@@ -1,0 +1,9 @@
+.avd-card {
+    
+    &__wrap {
+        display: flex;
+        column-gap: 10px;
+        justify-content: space-between;
+
+    }
+}
