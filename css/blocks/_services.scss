@@ -56,7 +56,7 @@
         box-shadow: 0px 0px 20px 3px var(--color-grey-alt);
 
         position: relative;
-        background-image: url(../../img/background_card_2.jpg);
+        
         border-radius: var(--border-radius);
         background-repeat: no-repeat;
         background-size: cover;
@@ -77,6 +77,32 @@
             opacity: 0.6;
             
         }
+
+        &-computer-diagnostics {
+            background-image: url(../../img/services_comp_diagnost.jpg);
+            background-position: bottom;
+        }
+
+        &-chip_tuning {
+            background-image: url(../../img/services_chip_tuning.jpg);
+            background-position: center;
+        }
+
+        &-egr {
+            background-image: url(../../img/services_egr.jpg);
+            background-position: center;
+        }
+
+        &-diagnost {
+            background-image: url(../../img/services_ostsilograf.jpg);
+            background-position: center;
+        }
+
+        &-rem {
+            background-image: url(../../img/services_provodka.jpg);
+            background-position: center;
+        }
+        
 
         @include desktop {
             min-height: 500px;

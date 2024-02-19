@@ -6,6 +6,8 @@
         padding: 15px 5px;
 
         
+
+        
         @include tablet {
             width: 100px;
         }
@@ -16,6 +18,11 @@
 
         img {
             width: 100%;
+            transition: var(--transition-duration);
+
+            @include hover {
+                transform: scale(1.1);
+            }
         }
 
     }
@@ -24,7 +31,7 @@
         cursor: pointer;
     }
 
-    background-color: var(--color-dark);
+    background-color: rgba(0, 0, 0, 0.668);
 
     &__inner {
         display: flex;
@@ -63,16 +70,24 @@
         }
 
         &-item {
+           position: relative;
 
             a {
                 cursor: pointer;
                 display: block;
                 padding: 15px 5px;
                 text-decoration: none;
+            }
+
+
+        }
+
+        &-border {
+            a {
                 background-image: linear-gradient(currentColor, currentColor);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
-                background-size: 0% 2px;
+                background-size: 0% 0.8px;
                 transition: background-size .3s;
             }
 
@@ -80,7 +95,7 @@
             a {
                 @include hover {
                     color: var(--color-accent);
-                    background-size: 100% 2px;
+                    background-size: 100% 0.8px;
                 }
             }
         }

@@ -2,21 +2,29 @@
     padding: 0 40px 85px 40px;
     color: var(--color-light);
 
+    @include mobile {
+        padding: 0;
+    }
+
 
 
     &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
+        justify-content: stretch;
         gap: 25px;
         min-height: 600px;
+
+        @include tablet {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__item {
         position: relative;
         padding: 25px 60px;
         box-shadow: 0 0px 3px 2px var(--color-grey-alt);
-        background-image: url(../../img/background_card_3.jpeg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -31,7 +39,25 @@
             height: 100%;
             background-color: var(--color-dark-alt);
             z-index: -1;
-            opacity: 0.6;
+            opacity: 0.8;
+
+            
+        }
+        &-first {
+            background-image: url(../../img/case_1.jpg);
+            background-position: center;
+        }
+        &-second {
+            background-image: url(../../img/case_2.jpg);
+            background-position: right;
+        }
+        &-thirth {
+            background-image: url(../../img/case_3.jpg);
+            background-position: center;
+        }
+        &-fourth {
+            background-image: url(../../img/case_4.jpg);
+            background-position: center;
         }
 
         @include tablet {
