@@ -1354,7 +1354,7 @@ h4 {
   position: relative;
   background-color: var(--color-dark-alt);
   color: var(--color-light);
-  z-index: -2;
+  z-index: 0;
 }
 .application__form-title {
   margin-bottom: 60px;

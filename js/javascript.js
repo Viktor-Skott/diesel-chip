@@ -1,4 +1,4 @@
-ymaps.ready(init);
+
         function init(){
             let map = new ymaps.Map("map", {
                 center: [58.063238, 38.788766],
@@ -23,6 +23,7 @@ ymaps.ready(init);
 
             map.geoObjects.add(placemark);
         }
+        ymaps.ready(init);
 
 
         
