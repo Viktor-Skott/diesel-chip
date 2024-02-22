@@ -25,7 +25,7 @@
             background-image: url(../../img/background_banner.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: right;
             
             z-index: -2;
         }
@@ -39,7 +39,8 @@
             top: 0;
             left: 0;
             background-color: var(--color-dark);
-            opacity: 0.55;
+            background: linear-gradient(90deg, rgba(0,0,0,1) 42%, rgba(100, 100, 100, 0) 100%);
+            opacity: 0.8;
             z-index: -1;
         }
         
@@ -71,12 +72,8 @@
             }
         }
 
-        &-accent{
-            color: var(--color-light);
-
-            @include mobile {
-                padding: 4px 15px;
-            }
+        &-accent {
+            text-shadow: 1px 0px #9bf8fd;
         }
     }
     
@@ -96,6 +93,7 @@
             font-size: 12px;
             height: 40px;
             padding-inline: 33px;
+            text-transform: uppercase;
         }
     }
     

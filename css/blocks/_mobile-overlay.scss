@@ -3,7 +3,7 @@
     height: 100%;
     margin: 0;
     border: none;
-    background-color: var(--color-dark-alt);
+    background-color: var(--color-dark);
 
     padding: 14px 20px;
 
@@ -26,7 +26,7 @@
         @include flex-center;
 
         color: var(--color-light);
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
         flex-direction: column;

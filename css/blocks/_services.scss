@@ -2,6 +2,10 @@
 
     &__inner {
         color: var(--color-dark);
+        background: linear-gradient(0deg, rgb(49 49 49 / 74%) -8%, rgb(255, 255, 255) 19%);
+
+
+        padding-bottom: 100px;
 
         .a {
             margin-top: 200px;
@@ -74,7 +78,7 @@
             background-color: var(--color-dark);
             border-radius: var(--border-radius);
             z-index: -1;
-            opacity: 0.6;
+            opacity: 0.7;
             
         }
 

@@ -2,7 +2,7 @@
     
     &__inner {
         position: relative;
-        background-color: var(--color-dark-alt);
+        background-color: var(--color-light);
         z-index: 2;
         
 
@@ -13,7 +13,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: var(--color-dark-alt);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 55%, rgba(44, 44, 44, 0.438) 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
             z-index: -1;
             opacity: 0.6;
@@ -42,10 +42,12 @@
         padding-bottom: 156px;
         max-width: 660px;
         margin-right: 500px;
+        padding-left: 100px;
         
         @include tablet {
             max-width: 500px;
             margin: 0 auto;
+            padding-left: 0px;
         }
        
     }
@@ -55,11 +57,12 @@
         color: var(--color-dark);
         padding: 50px 50px 30px 65px;
         border-radius: var(--border-radius);
+        box-shadow: 2px 2px 17px 2px black;
     
 
         display: flex;
         flex-direction: column;
-        row-gap: 70px;
+        row-gap: 50px;
 
         @include tablet {
             padding: 30px 30px 20px 45px;

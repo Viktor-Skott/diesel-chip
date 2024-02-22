@@ -41,7 +41,8 @@
         &-wrap {
             display: grid;
             grid-template-columns: 0.8fr 1fr;
-            align-items: start;
+            align-items: center;
+            
             column-gap: 20px;
 
             @include mobile {

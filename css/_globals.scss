@@ -35,6 +35,15 @@ a {
     color: inherit;
 }
 
+p {
+    @include mobile {
+        font-size: 12px;
+    }
+    @include mobile-s {
+        font-size: 10px;
+    }
+}
+
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
 }

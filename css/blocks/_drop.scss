@@ -23,7 +23,7 @@
         position: absolute;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.8);
         z-index: 2;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         
@@ -36,6 +36,8 @@
         a {
             padding-inline: 15px;
         }
+
+        
     }
 
     &__item {
